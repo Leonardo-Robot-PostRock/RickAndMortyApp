@@ -18,3 +18,9 @@
     font-weight: 100;
     margin-left: 150px;
 }
+
+@media (max-width: 768px) {
+    .navbar-item {
+        margin-left: 0;
+    }
+}
