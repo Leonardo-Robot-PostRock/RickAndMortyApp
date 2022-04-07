@@ -1,0 +1,18 @@
+.page {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+.pagination {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.page-item {
+    display: inline-block;
+    list-style: none;
+}

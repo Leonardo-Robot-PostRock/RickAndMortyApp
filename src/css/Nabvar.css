@@ -8,6 +8,14 @@
 
 }
 
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 .navbar-item {
     color: #fff;
     font-size: 20px;

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Nabvar";
 import Characters from "../components/Characters";
-import '../css/global.scss';
-
+import "../css/global.scss";
+import Pagination from "../components/Pagination";
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
@@ -21,11 +21,12 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <Navbar brand="Rick and Morty App" />
-      <div className="container">
-        <Characters 
-            characters={characters}
-        />
+      <div className="main-container">
+        <Navbar brand="Rick and Morty App" />
+        <div className="container">
+          <Pagination />
+          <Characters characters={characters} />
+        </div>
       </div>
     </React.Fragment>
   );

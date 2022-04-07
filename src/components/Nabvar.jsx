@@ -4,7 +4,7 @@ import '../css/Nabvar.css';
 const Nabvar = ({ brand }) => {
     return (
         <nav className='navbar'>
-            <div>
+            <div className='navbar__container'>
                 <a className="navbar-item" href="">{brand}</a>
             </div>
         </nav>
