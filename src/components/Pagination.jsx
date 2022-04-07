@@ -1,16 +1,41 @@
 import React from "react";
 import "../css/Pagination.css";
 
-const Pagination = () => {
+const Pagination = ({ next, prev, onPrevius, onNext }) => {
+  const handlePrevius = () => {
+    onPrevius();
+  };
+  const handleNext = () => {
+    onNext();
+  };
+
   return (
     <nav className="page">
       <ul className="pagination">
-        <li className="page-item">
-          <button className="page-link">Previous</button>
-        </li>
-        <li className="page-item">
-          <button className="page-link">Next</button>
-        </li>
+        {prev ? (
+          <li className="page-item">
+            <button
+              className="page-link"
+              onClick={() => {
+                handlePrevius();
+              }}
+            >
+              Previous
+            </button>
+          </li>
+        ) : null}
+        {next ? (
+          <li className="page-item">
+            <button
+              className="page-link"
+              onClick={() => {
+                handleNext();
+              }}
+            >
+              Next
+            </button>
+          </li>
+        ) : null}
       </ul>
     </nav>
   );
