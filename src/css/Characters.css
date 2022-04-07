@@ -1,10 +1,11 @@
 .col {
   display: grid;
   margin-bottom: 10px;
-  justify-content: center;
-  align-items: center;
+  place-content: center;
+  justify-self: center;
+  width: 250px;
   grid-gap: 10px;
-
+  height: 400px;
 }
 
 .row {
@@ -28,6 +29,7 @@ img {
 .card-body {
   display:grid;
   justify-content: center;
+  align-items: center;
   text-align: start;
   height: 120px;
   margin: 10px 0;
@@ -50,6 +52,7 @@ img {
 .card-body p {
   display: block;
   margin: 10px 0;
+  height: 20px;
   width: 100%;
   font-weight: 300;
 }
